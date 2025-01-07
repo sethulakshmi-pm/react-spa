@@ -1,24 +1,28 @@
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import './App.css';
 
-import Followers from './pages/Followers';
-import Following from './pages/Following';
-import Home from './pages/Home';
-import Profile from './pages/Profile';
-import React from 'react';
-import Repos from './pages/Repos';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-function App() {
+import Blogs from "./pages/Blogs";
+import Contact from "./pages/Contact";
+import Home from "./pages/Home";
+import Layout from "./pages/Layout";
+import NoPage from "./pages/NoPage";
+import ReactDOM from 'react-dom/client';
+
+export default function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/followers" element={<Followers />} />
-        <Route path="/following" element={<Following />} />
-        <Route path="/repos" element={<Repos />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="blogs" element={<Blogs />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
-export default App;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
