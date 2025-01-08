@@ -1,5 +1,14 @@
+import { Helmet } from 'react-helmet';
+
 const Home = () => {
-  return <div className="page-content"><h1>Welcome to the Home Page!</h1></div>;
+  return (
+    <div className="page-content">
+      <Helmet>
+        <title>HOME Page Title</title>
+      </Helmet>
+      <h1>Welcome to the Home Page!</h1>
+    </div>
+  );
 };
 
 export default Home;
