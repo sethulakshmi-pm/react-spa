@@ -18,7 +18,7 @@ const Layout = () => {
       </main>
 
       <footer className="app-footer">
-        <p>&copy; 2025 My Website. All Rights Reserved.</p>
+        <p>&copy; 2025 My Website - Sethulakshmi P M. All Rights Reserved.</p>
       </footer>
     </div>
   );
