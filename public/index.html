@@ -8,9 +8,9 @@
       })(window, "InstanaEumObject", "ineum");
 
       ineum('reportingUrl', 'https://eum-magenta-saas.instana.rocks');
-      ineum('key', 'VyzUrA39TNKCiHRhHMtBow');
+      ineum('key', 'n2vaddBSQ22mGsc3RaNvog');
       ineum('trackSessions');
-      ineum('autoPageDetection', { titleAsPageName: true });
+      ineum('autoPageDetection', { mappingRule: [[/.*contact.*/i, 'Contact Details..!!!'], [/.*blogs.*/i, 'Blogs Details..!!!']] });
     </script>
     <script defer crossorigin="anonymous" src="https://eum-magenta-saas.instana.rocks/1.7.3/eum.min.js"
       integrity="sha384-pYPTSdvwsCsJubrLEHxrtlG8F/RCwPOMs1zjJA+IcMNFy3sbID3uZoYSXtxS+frI"></script>
