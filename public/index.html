@@ -2,19 +2,52 @@
 <html lang="en">
 
 <head>
-  <script>
+  <!-- APD-titleAsPageName - in release env -->
+  <!-- <script>
     (function (s, t, a, n) {
       s[t] || (s[t] = a, n = s[a] = function () { n.q.push(arguments) },
         n.q = [], n.v = 2, n.l = 1 * new Date)
     })(window, "InstanaEumObject", "ineum");
 
     ineum('reportingUrl', 'https://eum-magenta-saas.instana.rocks');
-    ineum('key', 'n2vaddBSQ22mGsc3RaNvog');
+    ineum('key', 'F2jkORXiSlSXiID5pk2pYg');
     ineum('trackSessions');
-    ineum('autoPageDetection', { mappingRule: [[/.*contact.*/i, 'Contact Details..!!!'], [/.*blogs.*/i, 'Blogs Details..!!!']] });
+    ineum('autoPageDetection', { titleAsPageName: true });
   </script>
-  <script defer crossorigin="anonymous" src="https://eum-magenta-saas.instana.rocks/1.7.3/eum.min.js"
-    integrity="sha384-pYPTSdvwsCsJubrLEHxrtlG8F/RCwPOMs1zjJA+IcMNFy3sbID3uZoYSXtxS+frI"></script>
+  <script defer crossorigin="anonymous" src="https://eum-magenta-saas.instana.rocks/1.7.4/eum.min.js"
+    integrity="sha384-kaH5ia7dc78hj/WSUrkk2W7GiSpw6VusNtc6UZ7HM4TusG25fJSwA8jwoVPDAVjG"></script> -->
+
+
+<!-- APD-autoPageDetectionAsTrue - in release env -->
+<!-- <script>
+  (function (s, t, a, n) {
+    s[t] || (s[t] = a, n = s[a] = function () { n.q.push(arguments) },
+      n.q = [], n.v = 2, n.l = 1 * new Date)
+  })(window, "InstanaEumObject", "ineum");
+
+  ineum('reportingUrl', 'https://eum-magenta-saas.instana.rocks');
+  ineum('key', 'iaEv2ro_SsSBUQ-451l2TA');
+  ineum('trackSessions');
+  ineum('autoPageDetection', true);
+</script>
+<script defer crossorigin="anonymous" src="https://eum-magenta-saas.instana.rocks/1.7.4/eum.min.js"
+  integrity="sha384-kaH5ia7dc78hj/WSUrkk2W7GiSpw6VusNtc6UZ7HM4TusG25fJSwA8jwoVPDAVjG"></script> -->
+
+<!-- APD-mappingRules - in release env -->
+<script>
+  (function (s, t, a, n) {
+    s[t] || (s[t] = a, n = s[a] = function () { n.q.push(arguments) },
+      n.q = [], n.v = 2, n.l = 1 * new Date)
+  })(window, "InstanaEumObject", "ineum");
+
+  ineum('reportingUrl', 'https://eum-magenta-saas.instana.rocks');
+  ineum('key', 'sJtX-9FkTCmbuAyvyszKJQ');
+  ineum('trackSessions');
+  ineum('autoPageDetection', { mappingRule: [[/.*blogs.*/i, 'Blogs Details']] });
+</script>
+<script defer crossorigin="anonymous" src="https://eum-magenta-saas.instana.rocks/1.7.4/eum.min.js"
+  integrity="sha384-kaH5ia7dc78hj/WSUrkk2W7GiSpw6VusNtc6UZ7HM4TusG25fJSwA8jwoVPDAVjG"></script>
+
 
   <meta charset="utf-8" />
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
